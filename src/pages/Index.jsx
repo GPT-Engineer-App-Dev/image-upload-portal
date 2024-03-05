@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Image, Input, InputGroup, InputLeftElement, VStack, Text, useToast } from "@chakra-ui/react";
+import { Box, Button, Image, Textarea, InputGroup, InputLeftElement, VStack, Text, useToast } from "@chakra-ui/react";
 import { FaUpload } from "react-icons/fa";
 
 const Index = () => {
@@ -34,13 +34,13 @@ const Index = () => {
         Image Upload
       </Text>
       <InputGroup mb={4}>
-        <Input placeholder="Enter some text..." pl="5rem" />
+        <Textarea placeholder="Enter some text..." pl="5rem" resize="vertical" />
         <InputLeftElement width="4.5rem">
           <Button h="1.75rem" size="sm" leftIcon={<FaUpload />} onClick={() => document.getElementById("file-upload").click()}>
             Choose
           </Button>
         </InputLeftElement>
-        <Input pl="6rem" type="file" accept="image/*" onChange={handleImageChange} hidden id="file-upload" />
+        <input style={{ display: "none" }} type="file" accept="image/*" onChange={handleImageChange} id="file-upload" />
       </InputGroup>
       {selectedImage && (
         <Box boxSize="sm">
