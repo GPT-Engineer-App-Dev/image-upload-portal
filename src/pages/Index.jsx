@@ -34,7 +34,7 @@ const Index = () => {
         Image Upload
       </Text>
       <InputGroup mb={4}>
-        <Textarea placeholder="Enter some text..." pl="5rem" minH="unset" size="lg" />
+        <Textarea placeholder="Enter some text..." pl="5rem" resize="vertical" size="lg" />
         <InputLeftElement width="4.5rem">
           <Button h="1.75rem" size="sm" leftIcon={<FaUpload />} onClick={() => document.getElementById("file-upload").click()}>
             Choose
