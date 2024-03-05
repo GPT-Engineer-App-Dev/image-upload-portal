@@ -34,7 +34,7 @@ const Index = () => {
         Image Upload
       </Text>
       <InputGroup mb={4}>
-        <Input placeholder="Enter some text..." pl="5.5rem" />
+        <Input placeholder="Enter some text..." pl="5rem" />
         <InputLeftElement width="4.5rem">
           <Button h="1.75rem" size="sm" leftIcon={<FaUpload />} onClick={() => document.getElementById("file-upload").click()}>
             Choose
