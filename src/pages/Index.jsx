@@ -33,6 +33,7 @@ const Index = () => {
       <Text fontSize="2xl" fontWeight="bold">
         Image Upload
       </Text>
+      <Input placeholder="Enter some text..." mb={4} />
       <Box>
         <Input type="file" accept="image/*" onChange={handleImageChange} hidden id="file-upload" />
         <Button leftIcon={<FaUpload />} onClick={() => document.getElementById("file-upload").click()}>
