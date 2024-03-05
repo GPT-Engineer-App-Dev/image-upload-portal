@@ -40,7 +40,7 @@ const Index = () => {
             Choose
           </Button>
         </InputLeftElement>
-        <Input pl="5rem" type="file" accept="image/*" onChange={handleImageChange} hidden id="file-upload" />
+        <Input pl="6rem" type="file" accept="image/*" onChange={handleImageChange} hidden id="file-upload" />
       </InputGroup>
       {selectedImage && (
         <Box boxSize="sm">
